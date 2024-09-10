@@ -30,9 +30,9 @@ namespace GitExample1.Controllers
         }
 
 
-        public IActionResult Login()
-        {
-            return View();
-        }
+        //public IActionResult Login()
+        //{
+        //    return View();
+        //}
     }
 }
