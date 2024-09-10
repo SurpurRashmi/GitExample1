@@ -7,7 +7,7 @@ namespace GitExample1.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        int count = 200;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -20,13 +20,19 @@ namespace GitExample1.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            return Content("Privacy Method -Updated");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
+        public IActionResult Login()
+        {
+            return View();
         }
     }
 }
