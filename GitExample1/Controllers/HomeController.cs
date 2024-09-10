@@ -8,7 +8,7 @@ namespace GitExample1.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         int count = 200;
-        string name="HCL Technologies"
+        string name = "HCL Technologies";
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
