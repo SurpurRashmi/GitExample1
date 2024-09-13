@@ -6,7 +6,7 @@ namespace GitExample1.Controllers
     {
         public IActionResult Index()
         {
-            return Content("Branch-2");
+            return Content("Branch1");
         }
     }
 }
